@@ -2,9 +2,10 @@
 require('connexion.php');
 
 // if (isset($_GET['modifier'])){
+
     $id= $_GET['modifier'];
     try{
-        $sql=$conn->prepare("SELECT  * FROM `categorie` WHERE id_categorie = $id");
+        $sql=$conn->prepare("SELECT * FROM `categorie` WHERE id_categorie = $id");
         $sql->execute();
         $tab=$sql->fetch();
         echo "deleted";
@@ -27,7 +28,7 @@ require('connexion.php');
 <body class="container">
 <?php include 'header.php';?>
 <main>
-<form method="GET" action="supprimer.php" enctype="multipart/form-data">
+<form method="POST" action="trtCat.php" enctype="multipart/form-data">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">nom</label>
@@ -35,8 +36,11 @@ require('connexion.php');
     </div>
   </div>
   <div class="form-group">
+    
+  <input type="hidden" name="oldImage" id="oldImage" value="<?= $tab['imgcat']?>">
+
   <input type="file" class="form-control " id="inputEmail4" name="fileToUpload">
-    <img src="uploads/<?php echo $tab['imgcat']; ?>">
+    <img style="width: 200px; height: auto;" src="uploads/<?php echo $tab['imgcat']; ?>">
     </div>
     <input type="text" class="form-control d-none" id="inputEmail4" name="id_categorie" value="<?php echo $tab["id_categorie"]?>">
   <!-- <div class="form-group">

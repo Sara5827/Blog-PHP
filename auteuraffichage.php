@@ -42,7 +42,7 @@
                 <td><?php echo $record['email'];?></td>
                 <td><?php echo $record['avatar'];?></td>
                 <td><a href="AffichageModAuteur.php?modifier=<?php echo $record['id_auteur'];?>" name="modifier" class="edit_btn">modifier</a>
-                <a href="supprimerauteur.php<input type="text" class="d-none" value="<?=  $id_article  ?>" name="idar">" name="supprimer" class="del_btn">delete</a> </td>
+                <a href="supprimerauteur.php?supprimer=<?php echo $record['id_auteur'];?>" >delete</a> </td>
               </tr>
           <?php endwhile;?>
           </tbody>

@@ -41,7 +41,7 @@
                 <td><?php echo $record['nom'];?></td>
                 <td><img class="img_2" src="<?php echo $target.$record['imgcat'];?>"></td>
                 <td><a href="Formulaire_Mod_Cat.php?modifier=<?php echo $record['id_categorie'];?> " name="modifier" class="edit_btn">modifier</a>
-                <a href="supprimer.php?supprimer=<?php echo $record['id_categorie'];?> " name="supprimer" class="del_btn">delete</a> </td>
+                <a href="trtCat.php?supprimer=<?php echo $record['id_categorie'];?> " name="supprimer" class="del_btn">delete</a> </td>
               </tr>
           <?php endwhile;?>
           </tbody>

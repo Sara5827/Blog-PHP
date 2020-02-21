@@ -11,6 +11,8 @@ try {
     
         // echo a message to say the UPDATE succeeded
         echo $stmt->rowCount() . " records UPDATED successfully";
+        header('Location: auteuraffichage.php');
+
         }
     catch(PDOException $e)
         {

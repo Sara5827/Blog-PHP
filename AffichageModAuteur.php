@@ -1,9 +1,9 @@
 <?php
 require('connexion.php');
 
-// if (isset($_GET['modifier'])){
+if (isset($_GET['modifier'])){
     $id= $_GET['modifier'];
-  $id_requi
+  // $id_requi;
     try{
         $sql=$conn->prepare("SELECT * FROM `auteur` WHERE id_auteur = $id");
         $sql->execute();
@@ -13,8 +13,10 @@ require('connexion.php');
     }catch(PDOException $e){
         echo $e;
     }
+    
+    // header('Location: auteuraffichage.php');
     // header('refresh:3 url=Formulaire_Mod_Cat.php'); 
-// }
+}
 ?>
 
 <!DOCTYPE html>

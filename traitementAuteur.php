@@ -13,6 +13,8 @@ try {
     // use exec() because no results are returned
     $conn->exec($sql);
     echo "New record created successfully";
+    header('refresh:1 url=auteuraffichage.php');
+
     }
 catch(PDOException $e)
     {
@@ -32,6 +34,6 @@ if (isset($_GET['supprimer'])){
     }catch(PDOexception $e){
         echo $e;
     }
-    // header('refresh:1 url=categorie.php');
+    header('refresh:1 url=categorie.php');
 }
 ?>
