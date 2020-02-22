@@ -1,10 +1,10 @@
 <?php
-require('connexion.php');
+require('FormValidation.php');
 $dbname = "blognative";
 if (isset($_POST['SubmitAuteur']))  {
-    $nom = $_POST['nomauteur'];
-    $email = $_POST['email'];
-    $Avatar = $_POST['avatar'];
+    $nom = test_input($_POST['nomauteur']);
+    $email = test_input($_POST['email']);
+    $Avatar = test_input($_POST['avatar']);
     
 
 try {

@@ -15,7 +15,7 @@
   <a class="nav-link active" href="homepage.php">Home</a>
   <a class="nav-link" href="formulaireArticle.php">Article</a>
   <a class="nav-link" href="cat.php">Categorie</a>
-  <a class="nav-link" href="auteuraffichage.php">Auteur</a>
+  <a class="nav-link" href="formuleauteur.php">Auteur</a>
 </nav>
     </div>
   </div>

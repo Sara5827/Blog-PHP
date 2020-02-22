@@ -49,19 +49,19 @@ echo "Sorry, there was an error uploading your file.";
 // ++++++++++++++++++++++++++++++++Connexion+++++++++++++++++++++++++++++++++++++++
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-require('connexion.php');
+require('FormValidation.php');
 
 // +++++++++++++++++++++++++++++++++Insertion++++++++++++++++++++++++++++++++++++++
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 $dbname = "blognative";
 if (isset($_POST['AjouterArticle'])){
-    $titre = $_POST['titre'];
-    $contenu = $_POST['contenu'];
-    $Auteur = $_POST['auteur'];
-    $cat = $_POST['cat'];
-    $date1 = $_POST['date1'];
-    $imgcat = $_FILES["fileToUpload"]["name"];
+    $titre = test_input($_POST['titre']);
+    $contenu = test_input($_POST['contenu']);
+    $Auteur = test_input($_POST['auteur']);
+    $cat = test_input($_POST['cat']);
+    $date1 = test_input($_POST['date1']);
+    $imgcat = test_input($_FILES["fileToUpload"]["name"]);
     // $auteur_option = $_POST['auteur_option'];
     // $categorie_option = $_POST['categorie_option'];
 

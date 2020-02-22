@@ -18,13 +18,7 @@
   </div>
   <div class="form-group">
     <input type="file" name="fileToUpload" id="fileToUpload">
-    <!-- <input type="submit" value="Upload Image" name="submit"> -->
     </div>
-  <!-- <div class="form-group">
-    <div class="form-check">
-    <input type="file" accept="image/*" name=image4 />
-    </div>
-  </div> -->
   <button type="submit" class="btn btn-primary" name="ajoutercat">ajouter categorie</button>
 </form>
 </main>
