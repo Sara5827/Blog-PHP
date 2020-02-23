@@ -1,7 +1,7 @@
 <?php
 require('connexion.php');
 $dbname = "blognative";
-print_r($_POST);
+// print_r($_POST);
 if (isset($_POST['com']))  {
     $nom = $_POST['name'];
     $contenue = $_POST['commentaire'];

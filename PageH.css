@@ -1,14 +1,23 @@
-#img {
-    width: 100%;
-    height: 650px;
-}
-
-#bodyblog {
-    margin: auto 0;
-    width: 80%;
-}
-
-#remarque {
-    width: 100%;
-    height: 500px;
-}
+        #img {
+            width: 100%;
+            height: 650px;
+        }
+        
+        #bodyblog {
+            margin: auto 0;
+            width: 80%;
+        }
+        
+        #remarque {
+            width: 100%;
+            height: 500px;
+        }
+        
+        #breakAB {
+            width: 100%;
+            height: 200px;
+        }
+        
+        #testJoin {
+            height: 200px;
+        }

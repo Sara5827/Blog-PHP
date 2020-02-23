@@ -1,6 +1,6 @@
 <?php
 require('connexion.php');
-print_r($_GET);
+// print_r($_GET);
 
 $id = $_GET['supp'];
 $id1 = $_GET['id_article'];
