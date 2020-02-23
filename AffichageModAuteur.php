@@ -28,7 +28,8 @@ if (isset($_GET['modifier'])){
     <title>Document</title>
 </head>
 <body class="container">
-<?php include 'header.php';?>
+<?php include 'headerBlog.php';?>
+<br><br><br>
 <main>
 <form method="POST" action="modifierauteur.php">
   <div class="form-row">

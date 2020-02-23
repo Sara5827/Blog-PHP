@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body class="container">
-<?php include 'header.php';?>
+<?php include 'headerBlog.php';?>
 <main>
+  <br>
+  <br>
+  <br>
 <form method="POST" action="traitementAuteur.php">
   <div class="form-row">
     <div class="form-group col-md-6">

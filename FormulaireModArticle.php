@@ -27,7 +27,7 @@ require('connexion.php');
     <title>Document</title>
 </head>
 <body class="container">
-<?php include 'header.php';?>
+<?php include 'headerBlog.php';?>
 <main>
 <form method="POST" action="modifierarticle.php" enctype="multipart/form-data">
   <div class="form-row">

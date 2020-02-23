@@ -32,10 +32,10 @@
             </form>
             <ul class="navbar-nav ml-auto">
             
-              <li class="nav-item"><a href="login.html" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="login.html" class="nav-link">Article</a></li>
-              <li class="nav-item"><a href="signup.html" class="nav-link">Gategorie</a></li>
-              <li class="nav-item"><a href="signup.html" class="nav-link">Auteur</a></li>
+              <li class="nav-item"><a href="test.php" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="ArticleBlog.php" class="nav-link">Article</a></li>
+              <li class="nav-item"><a href="categorieBlog.php" class="nav-link">Categorie</a></li>
+              <li class="nav-item"><a href="AuteurBlog.php" class="nav-link">Auteur</a></li>
               <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a href="user-add-0.html" class="btn btn-primary">Add a listing</a></li>
             </ul>
           </div>

@@ -6,13 +6,10 @@
             article.auteur=auteur.id_auteur order by id_article DESC");
             // $image_show= $conn-> prepare($query);
             $stmt->execute();
-            // while($record =$image_show->fetch(PDO::FETCH_ASSOC)):
-              
+            // while($record =$image_show->fetch(PDO::FETCH_ASSOC)):             
               $datas=$stmt->fetchAll();
               print_r($data);
-
-
-
+              include 'headerBlog.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,50 +22,17 @@
     <title>Document</title>
 </head>
 <body>
-  <!-- **************************************************header********************************************* -->
-  <!-- ***************************************************************************************************** -->
-   <header class="header">
-      
-      <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
-        <div class="container-fluid">
-          <div class="d-flex align-items-center"><a href="index.html" class="navbar-brand py-1"><img src="https://d19m59y37dris4.cloudfront.net/directory/1-4-1/img/logo.svg" alt="Directory logo"></a>
-            <form action="#" id="search" class="form-inline d-none d-sm-flex">
-              <div class="input-label-absolute input-label-absolute-left input-reset input-expand ml-lg-2 ml-xl-3"> 
-                <label for="search_search" class="label-absolute"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
-                <input id="search_search" placeholder="Search" aria-label="Search" class="form-control form-control-sm border-0 shadow-0 bg-gray-200">
-                <button type="reset" class="btn btn-reset btn-sm"><i class="fa-times fas"></i></button>
-              </div>
-            </form>
-          </div>
-          <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-         
-          <div id="navbarCollapse" class="collapse navbar-collapse">
-            <form action="#" id="searchcollapsed" class="form-inline mt-4 mb-2 d-sm-none">
-              <div class="input-label-absolute input-label-absolute-left input-reset w-100">
-                <label for="searchcollapsed_search" class="label-absolute"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
-                <input id="searchcollapsed_search" placeholder="Search" aria-label="Search" class="form-control form-control-sm border-0 shadow-0 bg-gray-200">
-                <button type="reset" class="btn btn-reset btn-sm"><i class="fa-times fas">           </i></button>
-              </div>
-            </form>
-            <ul class="navbar-nav ml-auto">
-            
-              <li class="nav-item"><a href="login.html" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="login.html" class="nav-link">Article</a></li>
-              <li class="nav-item"><a href="signup.html" class="nav-link">Gategorie</a></li>
-              <li class="nav-item"><a href="signup.html" class="nav-link">Auteur</a></li>
-              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a href="user-add-0.html" class="btn btn-primary">Add a listing</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- ********************************************************************************************************** -->
-    <!-- ********************************************************************************************************** -->
      <main>
        <!-- *******************************************Picture Home************************************************ -->
-         <section height="400px">
-        <div><img id="img" src="https://image.jimcdn.com/app/cms/image/transf/none/path/se4a5090e053225fa/backgroundarea/i972dfa69a5f6c625/version/1565011951/image.jpg" alt=""></div>
-         </section>
+       <section height="400px">
+       <div class="card bg-dark text-white">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/se4a5090e053225fa/backgroundarea/i972dfa69a5f6c625/version/1565011951/image.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    
+  </div>
+</div>  
+</section>      
+       
     <!-- ********************************************************************************************************** -->
     <!-- ********************************************************************************************************** -->     
     <div class="text-center">
@@ -98,9 +62,19 @@
 </section>
          <!-- ======================================================================================= -->
          <!--====================================================================================  -->
-         <section>
-           
-         </section>
+  <section id="remarque">
+         <div class="site-newsletter bg-light text-dark">
+         <div class="container">
+           <div class="text-center">    
+            <h2 class="text-muted">Join our monthly newsletter and never miss out on new stories and promotions.</h2>
+             <div class="row">
+          <div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 ml-auto mr-auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+ </section>
      </main>
      <footer>
        

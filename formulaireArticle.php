@@ -15,8 +15,8 @@ require('connexion.php');
     <title>Document</title>
 </head>
 <body class="container">
-<?php include 'header.php';?>
-<main>
+<?php include 'headerBlog.php';?><br><br><br>
+<main class="container">
 <form method="POST" action="traitementArticle.php" enctype="multipart/form-data">
   <div class="form-row">
     <div class="form-group col-md-6">

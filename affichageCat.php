@@ -8,8 +8,12 @@
 </head>
 <body class="container">
 <?php 
+include 'headerBlog.php';
   require('connexion.php'); 
 ?>
+<br>
+<br>
+<br>
 <?php 
             $id_article = $_GET['id_article'];
             $target = "uploads/";
