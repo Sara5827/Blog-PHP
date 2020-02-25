@@ -3,7 +3,7 @@
 // $target = "uploads/";
             $stmt = $conn->prepare("SELECT * FROM article,categorie,auteur where 
             article.categorie=categorie.id_categorie and
-            article.auteur=auteur.id_auteur order by id_article DESC");
+            article.auteur=auteur.id_auteur order by id_article DESC LIMIT 12");
             // $image_show= $conn-> prepare($query);
             $stmt->execute();
             // while($record =$image_show->fetch(PDO::FETCH_ASSOC)):             
@@ -47,31 +47,34 @@
     <div class="container bg-light text-dark">
       <div class="row">
         <div class="col-md-9">
+
           <div class="row">
-          <nav class="d-flex flex-row flex-wrap">
           <?php foreach ($datas as $data): ?>
+
+          <!-- <nav class="d-flex flex-row flex-wrap"> -->
             <div class="col-md-6 ">
               <article class="card mb-4">
                 <header class="card-header">
                    <h4 class="card-title"><?=$data['nom_complet']?></h4>
                  </header>
                 <a href="post-image.html">
-                <img class="max-width-9 mb-2" src="uploads/<?=$data['img']  ?>" alt="Image Description" width="385px" height="auto">
+                <img class="wmax-width-9 mb-2" src="uploads/<?=$data['img']  ?>" alt="Image Description" width="385px" height="auto">
                 </a>
                 <div class="card-body">
                   <p class="card-text">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. </p>
                 </div>
-                <p>      <a href="FormulaireModArticle.php?modifier=<?php echo $data['id_article'];?>" name="modifier" class="edit_btn">modifier</a>
-                <a href="supprimerArticle.php?supp=<?php echo $data['id_article'];?>" name="supp" class="del_btn">delete</a>
-                <a href="affichageCat.php?id_article=<?php echo $data['id_article'];?>" name="afficher" class="del_btn">Afficher</a> 
+                <p>  
+                <a href="FormulaireModArticle.php?modifier=<?php echo $data['id_article'];?>" name="modifier" class="btn btn-primary edit_btn">modifier</a>
+                <a href="supprimerArticle.php?supp=<?php echo $data['id_article'];?>" name="supp" class="del_btn btn btn-danger">delete</a>
+                <a href="affichageCat.php?id_article=<?php echo $data['id_article'];?>" name="afficher" class="btn btn-secondary ">Afficher</a> 
                 </p>
               </article>  
             </div>
-             <div class="col-md-6">
-            </div>
-             <?php endforeach; ?>
-            </nav>
-          </div>
+           
+            <!-- </nav> -->
+                 <?php endforeach; ?>
+   </div>
+
         </div>
 <!-- ==============================================la 2eme Partie============================= -->
       <div class="col-md-3 ml-auto ">        

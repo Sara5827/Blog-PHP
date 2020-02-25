@@ -3,7 +3,7 @@
 // $target = "uploads/";
             $stmt = $conn->prepare("SELECT * FROM article,categorie,auteur where 
             article.categorie=categorie.id_categorie and
-            article.auteur=auteur.id_auteur order by id_article DESC");
+            article.auteur=auteur.id_auteur order by id_article DESC LIMIT 64");
             // $image_show= $conn-> prepare($query);
             $stmt->execute();
             // while($record =$image_show->fetch(PDO::FETCH_ASSOC)):             
@@ -33,59 +33,66 @@
 
      <main>
        <!-- *******************************************Picture Home************************************************ -->
-       <section height="400px">
+       <section height="200px">
        <div class="card bg-dark text-white">
-  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/se4a5090e053225fa/backgroundarea/i972dfa69a5f6c625/version/1565011951/image.jpg" class="card-img" alt="...">
-  <div class="card-img-overlay">
-    
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/se4a5090e053225fa/backgroundarea/i972dfa69a5f6c625/version/1565011951/image.jpg" class="card-img" alt="..." height="700px">
+  <div  class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+    <h1 class="card-title display-3"> <strong> Bienvenue sur le blog officiel de ....</strong></h1>
+    <!-- <p id="blog" class="card-text display-4">Dans notre site internet. ou vous trouverez un large choix de notre choix</p> -->
+     <br>
+    <h1>Bonne lecture et merci pour votre fidélité! </h1>
   </div>
+  
 </div>  
-</section>      
-       
+</section> 
     <!-- ********************************************************************************************************** -->
     <!-- ********************************************************************************************************** -->     
-    <div class="text-center">
+    <div class="text-center"><br><br>
           <p class="subtitle text-primary">Testimonials</p>
-          <h2 class="mb-5">Banque d'image et des photos libres</h2>
+        <h2 class="display-4 mb-5"> <strong>Banque d'image et des photos libres</strong> </h2><br><br><br>
     </div>
     <!-- *******************************************************Partie1******************************************** -->
     <!-- ********************************************************************************************************** -->
-  <section  class="container">
-  <nav class="d-flex flex-wrap">
- <?php foreach ($datas as $data): ?>
-    <div class="col-md-6 ">
-      <div class="row no-gutters border  rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static  bg-light text-dark">
-          <!-- <strong class="d-inline-block mb-2 text-primary"><?=$data['nom']?></strong> -->
-          <div class="mb-1 text-muted"><strong><?=$data['nom']?></strong></div>
-          <p class="card-text mb-auto"><?=$data['nom_complet']?></p>
-          
-          <a href="affichageCat.php?id_article=<?php echo $data['id_article'];?>" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img class="max-width-9 mb-2" src="uploads/<?=$data['img']  ?>" alt="Image Description" width="200px" height="250px">
-        </div>
-      </div>
+  <section  class="">
+  <div class="row row-cols-1 row-cols-md-4">
+ <?php $i=0;foreach ($datas as $data): ?>
+  <?php $i++; ?> 
+  <?php if($i==13): ?>
+     <div class="col-lg-12 text-center bg-light">
+       <P>Categorie</P>
+     <?php include 'slider.php'?>
     </div>
- <?php endforeach; ?>
-  </nav>
-</section>
-         <!-- ======================================================================================= -->
-         <!--====================================================================================  -->
-  <section id="remarque">
+    <!-- <section class="col-lg-12">
          <div class="site-newsletter bg-light text-dark" id="testJoin">
          <div class="container">
            <div class="text-center"> <br><br><br>   
             <h2 class="text-muted">Join our monthly newsletter and never miss out on new stories and promotions.</h2>
              <div class="row">
-          <div class="col-xs-12 col-sm-9 col-md-7 col-lg-5 ml-auto mr-auto">
-          </div>
         </div>
       </div>
     </div>
   </div> 
- </section>
+ </section>   -->
+ 
+  <?php endif; ?>
+  <div class="col mb-2">
+    <div class="card">
+      <img src="uploads/<?=$data['img']  ?>" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> <a href="affichageCat.php?id_article=<?php echo $data['id_article'];?>" class="stretched-link">Continue reading</a></h5>
+      </div>
+    </div>
+  </div>
+ <?php endforeach; ?>
+ 
+  
+
+
+         <!-- ======================================================================================= -->
+         <!--====================================================================================  -->
+
      </main>
+
      <footer>
        
      </footer>
