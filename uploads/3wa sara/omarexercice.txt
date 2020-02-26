@@ -1,0 +1,28 @@
+Exercices (requétes SQL)
+1. affichage du nom de la ville, le code postale et la commune de chaque ville:
+    SELECT ville_nom, ville_commune,ville_code_postal FROM `villes_france_free` WHERE 1 
+
+
+2. le nombre réel, le code postal de chaque ville ayant un nombre de communes iférieur à 2020
+
+SELECT ville_nom_reel, ville_code_postal FROM `villes_france_free` WHERE ville_commune < 2020
+
+3.affiche de toutes les villes ayant un nom different 
+.....
+4. Affichage toutes les villes dont la population des année 2010 est :
+_suppérieur à 1000 et le nombre de communes est iférieur à 200 
+et sorter-les par ordre croissant par rapport aux noms des villes
+
+SELECT ville_population_2010, ville_population_2010, ville_commune,ville_nom FROM `villes_france_free` WHERE (ville_population_2010 > 1000 AND ville_commune<200) ORDER BY ville_nom
+
+ 
+
+1. la liste des 10 villes les plus peuplées en 2012:
+
+* SELECT ville_population_2012 FROM `villes_france_free` ORDER BY ville_population_2012 DESC LIMIT 10
+ 
+2.  la liste des 50 villes ayant la plus faible superficie
+
+* SELECT ville_surface FROM `villes_france_free` ORDER BY ville_surface LIMIT 50
+
+3.  la liste des départements d’outres-mer, c’est-à-dire ceux dont le numéro de département commencent par “97”

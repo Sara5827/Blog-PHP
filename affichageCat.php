@@ -33,7 +33,8 @@ include 'headerBlog.php';
               // print_r($record);
 ?>
 <section class="bg-light text-dark">
-<div class="col-md-12">
+  <article class="d-flex">
+<div class="col-md-10">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
           <h2 class="d-inline-block mb-2 text-primary"><?php echo $record['title'];?></h2>
@@ -46,7 +47,26 @@ include 'headerBlog.php';
         </div>
       </div>
 </div>
-    <!-- ************************************Commentaire************************************ -->
+<div class="col-md-2">
+  <aside class="sidebar">
+            <div class="card mb-4">
+              <div class="card-body bg-primary">
+                <h4 class="card-title text-light">About</h4>
+                <p class="card-text text-light">sem quamaecenas tempus, aecenas tempus, tellus eget condimentum  <a href="#">semper libero</a>, sit amet adipiscing sem neque . </p>
+              </div>
+            </div><!-- /.card -->
+          </aside>
+</div>
+</article>
+<!-- ************************************Slider************************************ -->
+<!-- *********************************************************************************** -->
+<div>   
+<h3 > more picture  </h3>
+<?php  include 'slider.php'?>
+<a href="ArticleBlog.php" name="" class="btn btn-secondary ">Show More</a> 
+</div>
+
+ <!-- ************************************Commentaire************************************ -->
 <!-- *********************************************************************************** -->
 <form method="POST" action="commentaire.php">
 <div class="input-group flex-nowrap bg-light text-dark">

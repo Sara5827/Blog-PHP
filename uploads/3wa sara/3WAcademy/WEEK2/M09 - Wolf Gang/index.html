@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Slider -->
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="jquery.flexslider.js"></script>
+    
+</head>
+
+<body>
+
+    <!-- Place somewhere in the <body> of your page -->
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="slide1.jpg" />
+            </li>
+            <li>
+                <img src="slide2.jpg" />
+            </li>
+            <li>
+                <img src="slide3.jpg" />
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        // Can also be used with $(document).ready()
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+        });
+    </script>
+</body>
+
+</html>

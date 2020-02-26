@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+header,
+article,
+footer {
+  display: flex;
+}
+
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: Cambria;
+  font-size: 1.6rem;
+}
+img {
+  width: 100%;
+}
+.right {
+  filter: drop-shadow(5px 10px 3px #7e7e7e);
+}
+.left,
+.right {
+  width: 50%;
+}
+a {
+  background-color: #2bbdee;
+  color: white;
+  text-decoration: none;
+}
+p {
+  word-break: break-all;
+}
+footer {
+  font-size: 2rem;
+}
+header,
+footer {
+  justify-content: space-evenly;
+}

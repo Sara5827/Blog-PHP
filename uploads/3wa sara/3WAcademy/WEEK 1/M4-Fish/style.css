@@ -1,0 +1,159 @@
+.welcome {
+    width: 58%;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url("img/fond.png");
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#heaader {
+    background-color: #25B3B4;
+    border: 5px solid #2B9AA0;
+    margin-top: 70px;
+}
+
+#Welcome {
+    text-align: center;
+    font-family: "Open Sans";
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+#position1 {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flotte {
+    float: left;
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+}
+
+.flotte2 {
+    float: left;
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+}
+
+button {
+    background-color: #2B9AA0;
+}
+
+#multifish {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#crusty {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Event {
+    background-color: #34B1B2;
+    width: 20%;
+    display: inline-block;
+    margin: 5px;
+    padding-left: 20px;
+    border: 5px solid #2B9AA0;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.principale {
+    display: inline-block;
+    width: 69%;
+    background-color: #B6DEDC;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.test {
+    margin: 0;
+}
+
+#vignette {
+    position: absolute;
+    top: -60px;
+    left: 150px;
+}
+
+.fa {
+    color: #34B1B2;
+}
+
+#div1 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+button {
+    float: right;
+    text-align: center;
+}
+
+nav {
+    color: red;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.principale h3 {
+    text-align: center;
+}
+
+.fa-plus-circle {
+    color: white;
+}
+
+

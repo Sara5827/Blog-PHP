@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="traitment.php" method="post" target="_blank">
+      <div>
+        <label for="titre">Titre : </label>
+        <input type="text" name="titre" />
+      </div>
+      <div>
+        <label for="categorie">Categorie : </label>
+        <select name="categorie" id="">
+          <option value="categorie1">categorie 1</option>
+          <option value="categorie2">categorie 2</option>
+        </select>
+      </div>
+      <div>
+        <label for="auteur">Auteur : </label>
+        <input type="text" name="auteur" />
+      </div>
+      <div>
+        <label for="commentaire">Commentaire : </label>
+        <textarea name="commentaire" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <input type="file" name="image" />
+      </div>
+      <div>
+        <label for="mail">Email : </label>
+        <input type="text" name="mail" />
+      </div>
+      <div>
+        <label for="linkdin">Linkdin : </label>
+        <input type="text" id="linkdin" name="linkdin" />
+      </div>
+      <div>
+        <label for="facebook">Facebook : </label>
+        <input type="text" name="facebook" />
+      </div>
+
+      <input type="submit" value="Valider" />
+    </form>
+  </body>
+</html>

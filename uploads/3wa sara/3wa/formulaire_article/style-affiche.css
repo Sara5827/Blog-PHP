@@ -1,0 +1,55 @@
+h4 {
+  color: red;
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+}
+
+main {
+  box-shadow: 2px 3px 30px gray;
+  background-color: #d8eaf5;
+  width: 70%;
+  margin: 0 auto;
+}
+#article {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  width: 60%;
+}
+article p {
+  margin: 10px 0;
+  padding: 30px;
+  width: 80%;
+
+  background-color: white;
+  box-shadow: 2px 3px 30px gray;
+}
+aside {
+  height: 100%;
+  width: 30%;
+  box-shadow: 2px 3px 30px gray;
+}
+aside img {
+  width: 100%;
+}
+#entete {
+  display: flex;
+}
+#entete h2 {
+  width: 33%;
+}
+section {
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#icon {
+  font-size: 4rem;
+}
+#para {
+  width: 80%;
+}

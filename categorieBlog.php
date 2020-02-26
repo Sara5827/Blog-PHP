@@ -2,7 +2,7 @@
             $stmt = $conn->prepare("SELECT * FROM categorie");
             $stmt->execute();
             $datas=$stmt->fetchAll();
-            print_r($data);
+            // print_r($datas);
           ?>
 
 
@@ -16,23 +16,39 @@
     <title>Documente</title>
 </head>
 <?php 
-  require('connexion.php');
   include 'headerBlog.php';
 ?>
 <body class="container">
 <form methode="POST" action="traitementCath.php" enctype="multipart/form-data">
-<section>
-<?php foreach ($datas as $data): ?>
-  <?php echo $data['nom'];?>
-  <img class="img_2" src="<?php echo $target.$data['imgcat'];?>">
-  <a href="Formulaire_Mod_Cat.php?modifier=<?php echo $record['id_categorie'];?> " name="modifier" class="edit_btn">modifier</a>
-                <a href="trtCat.php?supprimer=<?php echo $record['id_categorie'];?> " name="supprimer" class="del_btn">delete</a>
-<?php endforeach;  ?>
-<div class="text-center">
+<div class="text-center"><br><br><br>
           <p class="subtitle text-primary">Testimonials</p>
           <h2 class="mb-5">Banque d'image et des photos libres</h2>
         </div>
-</section>
+<article>
+<div class="row">
+<?php foreach ($datas as $data): ?>
+<div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+          <?php echo $data['nom'];?>
+          <img src="uploads/<?=$data['imgcat']  ?>" class="card" width="349px" height="300px" alt="...">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="Formulaire_Mod_Cat.php?modifier=<?php echo $data['id_categorie'];?> " name="modifier" class="edit_btn">modifier</a>
+                <a href="trtCat.php?supprimer=<?php echo $data['id_categorie'];?> " name="supprimer" class="del_btn">delete</a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php endforeach; ?>
+        </div>
+        
+</article>
+
+<button type="submit" class="btn btn-primary" name="ajoutercat">ajouter categorie</button>
 <section >
     <div class="card-columns">
       <div class="card">

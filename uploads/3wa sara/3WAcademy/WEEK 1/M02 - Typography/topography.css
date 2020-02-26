@@ -1,0 +1,57 @@
+p {
+    font-family: "Cardo";
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align-last: justify;
+}
+
+h1 {
+    font-family: "BlacksWord";
+    margin-left: 40%;
+    margin-right: 50%;
+}
+
+h2 {
+    font-family: "BlacksWord";
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h3 {
+    font-family: "BlacksWord";
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h6 {
+    text-align: center;
+}
+
+* {
+    background-color: #E6E6E6;
+}
+
+@font-face {
+    font-family: "Cardo";
+    src: url("fonts/cardo/cardo-regular.woff");
+}
+
+@font-face {
+    font-family: "BlacksWord";
+    src: url("fonts/Blacksword.otf");
+}
+
+.fin {
+    text-align-last: center;
+}
+
+#div1 {
+    text-align: center;
+}
+
+h5 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: end;
+}

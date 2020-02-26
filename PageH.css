@@ -35,3 +35,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#home {
+    margin: 36px;
+}

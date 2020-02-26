@@ -83,6 +83,6 @@ if (isset($_POST['modifier'])){
         {
         echo $sql . "<br>" . $e->getMessage();
         }
-    header('Location: categorie.php'); 
+    header('Location: categorieBlog.php'); 
 }
 ?>

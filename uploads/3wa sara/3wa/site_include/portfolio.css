@@ -1,0 +1,380 @@
+/* Programme */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(img/fond.png);
+}
+
+h4 {
+    font-family: "Bree Serif";
+    color: #f32b5c;
+    padding: 30px;
+    font-size: 22px;
+}
+
+h3 {
+    font-family: "Bree Serif";
+    color: #f32b5c;
+    text-align: center;
+    padding: 25px;
+    font-size: 34px;
+}
+
+h5 {
+    font-family: "Bree Serif";
+    color: gray;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: "Bree Serif";
+    color: white;
+    font-size: 267%;
+    margin-bottom: 5%;
+}
+
+p {
+    font-family: "Bree Serif";
+}
+
+
+/* header */
+
+.bg_header {
+    width: 100%;
+    height: 1073px;
+}
+
+.global {
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+    font-size: 60px;
+    padding-top: 5%;
+    height: 141px;
+}
+
+.he {
+    width: 34%;
+}
+
+.he__head {
+    height: 250px;
+}
+
+.he__head--list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    list-style: none;
+}
+
+div li a {
+    text-decoration: none;
+    font-family: "Bree Serif";
+    color: gray;
+}
+
+.logo__img {
+    width: 79px;
+}
+
+.logo {
+    display: flex;
+}
+
+.global2 {
+    background-image: url("img/bg_header.png");
+    height: 800px;
+    text-align: center;
+    color: white;
+}
+
+.global2__child--p {
+    font-family: "Bree Serif";
+    font-size: 22px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.global2__child {
+    padding-top: 15%;
+}
+
+.global2__botton {
+    padding: 1%;
+    background-color: #f32b5c;
+    color: white;
+}
+
+
+/* main */
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer {
+    padding-top: 5%;
+}
+
+
+/* section1 */
+
+.competence {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+    text-align: center;
+}
+
+.competence__img {
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+
+/* section2--Services */
+
+.services {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+.services__child {
+    width: 21%;
+}
+
+.sec2 {
+    text-align: center;
+}
+
+.fas {
+    font-size: 2em;
+    border-radius: 40px;
+    border-color: solid #eff0f2;
+    padding: 12px;
+    color: gray;
+    background-color: #eff0f2;
+    border: 0.4px solid;
+}
+
+
+/* section3__ */
+
+.textimg {
+    width: 450px;
+    float: right;
+    margin-left: 20px;
+}
+
+.textimg1 {
+    width: 450px;
+    float: left;
+    margin-right: 20px;
+}
+
+.texte__orange--p {
+    margin-right: 20px;
+}
+
+.texte__time {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.texte__time--p {
+    margin-left: 20px;
+}
+
+.texte__aqua {
+    display: flex;
+}
+
+.texte__sweet {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/* Contacte  */
+
+.contacte__child {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacte__child--fas {
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 48%;
+    margin-bottom: 4%;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+}
+
+.contacte__button {
+    display: flex;
+    justify-content: center;
+}
+
+.contact__button--envoyer {
+    padding: 1%;
+    background-color: #f32b5c;
+    color: white;
+    padding: 2%;
+}
+
+.contact__button--effacer {
+    padding: 1%;
+    background-color: gray;
+    color: white;
+    padding: 2%;
+}
+
+.contacte__p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#contact__child--fasid {
+    width: 99%;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+    /* section1--mes competences*/
+    .competence {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .services__child {
+        width: 100%;
+    }
+    .textimg {
+        width: 259px;
+    }
+    .textimg1 {
+        width: 259px;
+    }
+    .global {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        text-align: center;
+        height: 2%;
+    }
+    .logo {
+        display: block;
+        padding-bottom: 5%;
+    }
+    .he__head--list {
+        font-size: 30%;
+        width: 50%;
+    }
+    .he {
+        width: 100%;
+    }
+    .he__head {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contact__button--envoyer {
+        padding: 4%;
+    }
+    .contact__button--effacer {
+        padding: 4%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .competence {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .services__child {
+        width: 100%;
+    }
+    .textimg {
+        display: block;
+        width: 340px;
+        float: none;
+        margin: 0;
+    }
+    .textimg1 {
+        display: block;
+        width: 340px;
+        float: none;
+        margin: 0;
+    }
+    .global {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        text-align: center;
+        height: 2%;
+    }
+    .global2__child {
+        padding-top: 30%;
+    }
+    .logo {
+        display: block;
+    }
+    .he__head--list {
+        display: block;
+        font-size: 30%;
+    }
+    .he {
+        width: 100%;
+    }
+    .contacte__child {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacte__child--fas {
+        width: 100%;
+    }
+    #contact__child--fasid {
+        width: 100%;
+    }
+    .contact__button--envoyer {
+        padding: 4%;
+    }
+    .contact__button--effacer {
+        padding: 4%;
+    }
+    .texte__time--p {
+        margin: 0;
+    }
+}

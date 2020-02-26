@@ -1,8 +1,8 @@
 <?php       require('connexion.php');
             $stmt = $conn->prepare("SELECT * FROM categorie");
             $stmt->execute();
-            $datas=$stmt->fetchAll();
-            print_r($data);
+            $slider=$stmt->fetchAll();
+            // print_r($datas);
           ?>
 
 <!DOCTYPE html>
@@ -18,61 +18,16 @@
 </head>
 
 <body>
-
-
-
-
-    <div class="owl-carousel owl-theme">
-        <div class="item">
-            <img src="images/c1.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c2.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c3.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c4.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c5.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c6.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c3.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c4.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c5.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c6.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c1.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c2.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c3.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c4.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c5.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/c6.jpg" alt="">
-        </div>
+<div>
+<div class="owl-carousel owl-theme">
+<?php foreach ($slider as $slid): ?>
+    <div class="item">
+    <img src="uploads/<?=$slid['imgcat']  ?>" class="card-img-top" alt="...">
     </div>
-
+<?php endforeach; ?>
+    </div>
+    </div>
+</body>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

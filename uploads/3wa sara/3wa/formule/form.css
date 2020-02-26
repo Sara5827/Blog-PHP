@@ -1,0 +1,21 @@
+body {
+    margin: 0 auto;
+    width: 50%;
+    background-image: url("img/openbooks.jpg");
+    border: 2px solid black;
+    background-repeat: none;
+    background-size: cover;
+    margin-top: 5%;
+}
+
+main {
+    background-color: burlywood;
+}
+
+.info__Titre {
+    display: flex;
+}
+
+p {
+    word-break: break-word !important;
+}

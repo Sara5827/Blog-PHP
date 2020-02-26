@@ -1,0 +1,26 @@
+body {
+    background-image: url("img/fond.png");
+}
+
+nav {
+    color: black;
+    font-family: oswald;
+    font-style: normal;
+    font-size: 1.3em;
+    padding-top: 40px;
+    float: right;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+#controle {
+    background-color:
+}

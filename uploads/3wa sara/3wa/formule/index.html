@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RichText example</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="css/site.css"> -->
+        <link rel="stylesheet" href="src/richtext.min.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="src/jquery.richtext.js"></script>
+		<link href="form.css" rel="stylesheet">
+
+
+
+    </head>
+    <body>
+	
+	<header>
+        <h1>Formulaire d'ajout d'un compt </h1>
+    </header>
+    <main>
+        <section>
+            <form action="test.php" method="post">
+                <section>
+                    <div class="Titre">
+                        <p>Nom de l'auteur: <input type="text" name="name" /></p>
+                        <p>Titre: <input type="text" name="prenom" /></p>
+                        <p>Categorie: <input type="text" name="cat" /></p>
+                    </div>
+                    <p> Mot de passe: <input type="password" name="prenom" /></p>
+                    <p>E-mail: <input type="" name="" /></p>
+                    <p>Image: <input type="file" name="image" alt="Submit"></p>
+                    <p>LinKedin <input id="monURL" name="monURL1" type="url"></p>
+                    <p> Facebook <input id="monURL" name="monURL2" type="url"></p>
+                    <p></p>Twitter<input id="monURL" name="monURL3" type="url"> </p>
+                    <div class="page-wrapper box-content">
+
+						<textarea class="content" name="commentaires"></textarea>
+
+					</div>
+                        <input type="submit" value="Envoyer les données" />
+                    </form>
+
+
+            </section>
+
+
+        
+
+        <script>
+        $(document).ready(function() {
+            $('.content').richText();
+        });
+        </script>
+
+    </body>
+</html>
