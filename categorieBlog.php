@@ -35,8 +35,8 @@
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                <a href="Formulaire_Mod_Cat.php?modifier=<?php echo $data['id_categorie'];?> " name="modifier" class="edit_btn">modifier</a>
-                <a href="trtCat.php?supprimer=<?php echo $data['id_categorie'];?> " name="supprimer" class="del_btn">delete</a>
+                <a href="Formulaire_Mod_Cat.php?modifier=<?php echo $data['id_categorie'];?> " type="button" name="modifier" class="btn btn-primary edit_btn">modifier</a>
+                <a href="trtCat.php?supprimer=<?php echo $data['id_categorie'];?> " name="supprimer" class="del_btn btn btn-danger">delete</a>
                 </div>
                 <small class="text-muted">9 mins</small>
               </div>
@@ -47,8 +47,7 @@
         </div>
         
 </article>
-
-<button type="submit" class="btn btn-primary" name="ajoutercat">ajouter categorie</button>
+<a href="formulairecat.php" type="sbmit">Ajouter un categorie</a>
 <section >
     <div class="card-columns">
       <div class="card">

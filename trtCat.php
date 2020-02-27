@@ -10,7 +10,7 @@ if (isset($_GET['supprimer'])){
     }catch(PDOException $e){
         echo $e;
     }
-    header('Location: categorie.php'); 
+    header('Location: categorieBlog.php'); 
 }
 
 // ===============================================================

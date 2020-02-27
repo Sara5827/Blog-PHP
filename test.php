@@ -72,8 +72,11 @@
   <div class="col mb-2 hover01 column">
     <div class="card animated bounce delay-4s">
      <figure> <img src="uploads/<?=$data['img']  ?>" class="card-img-top" alt="..."></figure>
-      <div class="card-body">
+      <div class="card-body"> 
+      <footer class="blockquote-footer d-flex">
+        <small class="text-muted">  Someone famous in <cite title="Source Title"></cite></small>
         <h5 class="card-title"> <a href="affichageCat.php?id_article=<?php echo $data['id_article'];?>" class="stretched-link"><i class="fa fa-eye"></i></a></h5>
+      </footer>
       </div>
     </div>
   </div>

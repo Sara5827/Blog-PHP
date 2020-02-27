@@ -79,7 +79,7 @@ catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
     }
-    header('refresh:1 url=categorie.php');
+    header('refresh:1 url=categorieBlog.php');
 }
 
 $conn = null;
