@@ -76,7 +76,7 @@ catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
     }
-    header('Location: ArticleBlog.php');
+    header('Location: elements.php');
 }
 
 // +++++++++++++++++++++++++++++++++Supprimer++++++++++++++++++++++++++++++++++++++

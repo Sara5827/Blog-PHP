@@ -5,5 +5,5 @@ $id = $_GET['supp'];
 
 $stmt= $conn-> prepare("DELETE FROM article WHERE id_article = $id");
 $stmt->execute();
-header('Location: ArticleBlog.php');
+header('Location: elements.php');
     ?>

@@ -50,7 +50,7 @@ if ($uploadOk == 0) {
         $sql = "UPDATE article 
             SET title='".$_REQUEST['titre']."', contenu='".$_REQUEST['contenu']."', date1='".$_REQUEST['date1']."',  categorie='".$_REQUEST['cat']."', auteur='".$_REQUEST['auteur']."',img= '".$_FILES["fileToUpload"]["name"]."'  
             WHERE id_article = '".$_REQUEST['id_article']."'";
-    echo $sql;
+    // echo $sql;
         // Prepare statement
         $stmt = $conn->prepare($sql);
         // execute the query
@@ -63,6 +63,6 @@ if ($uploadOk == 0) {
         {
         echo $sql . "<br>" . $e->getMessage();
         }
-    header('refresh:1 url=cat.php'); 
+    header('refresh:1 url=elements.php'); 
 
 ?>

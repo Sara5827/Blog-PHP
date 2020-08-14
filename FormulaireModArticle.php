@@ -7,7 +7,7 @@ require('connexion.php');
         $sql=$conn->prepare("SELECT  * FROM article WHERE id_article = $id");
         $sql->execute();
         $tab=$sql->fetch();
-        echo "deleted";
+        // echo "deleted";
         // print_r($tab);
     }catch(PDOException $e){
         echo $e;
@@ -23,29 +23,68 @@ require('connexion.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <title>Document</title>
 </head>
 <body class="container">
 <style>
        body{
           background-color: #ffffff;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.47' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='rotate(60 1000 750) scale(17.85) translate(-943.98 -707.98)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='rotate(60 1000 750) scale(17.85) translate(-943.98 -707.98)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(60 1000 750) scale(17.85) translate(-943.98 -707.98)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(60 1000 750) scale(17.85) translate(-943.98 -707.98)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='rotate(60 1000 750) scale(17.85) translate(-943.98 -707.98)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='rotate(60 1000 750) scale(17.85) translate(-943.98 -707.98)'%3E%3Cg fill='%231c38ff'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='rotate(60 1000 750) scale(17.85) translate(-943.98 -707.98)'%3E%3Cg fill='%231c38ff'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='rotate(60 1000 750) scale(17.85) translate(-943.98 -707.98)'%3E%3Cg fill='%231c38ff'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
             background-attachment: fixed;
             background-size: cover;
         }
+        #border-formule{
+          border-style: groove;
+          padding: 50px;
+          box-shadow: inset 0 0 1em grey, 0 0 1em gray;
+          margin: 20px;
+        }
+        .margin-formule{
+          margin-left: 200px;
+        }
+
     </style> 
-<?php include 'headerBlog.php';?><br><br><br>
+	<!-- Header -->
+  <header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<!-- <a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+								</a> -->
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="categorieBlog.php">Category</a></li>
+							<li><a href="elements.php">Article</a></li>
+							<li><a href="AuteurBlog.php">Auteur</a></li>
+						</ul>
+					</nav>
 <main>
 <form method="POST" action="modifierarticle.php" enctype="multipart/form-data">
-<section class="bg-light text-dark">
+<section class="bg-light text-dark" id="border-formule">
   <div class="form-row">
-    <div class="form-group col-md-6">
+    <div class="form-group margin-formule col-md-6">
       <label for="inputEmail4">Titre</label>
       <input type="text" class="form-control" id="inputEmail4" name="titre"  value="<?php echo $tab["title"]?>">
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group margin-formule">
     <textarea id="w3mission" rows="4" cols="75" name="contenu" placholder="contenu">
   <?php echo $tab["contenu"]?>   
     </textarea> 
@@ -53,7 +92,7 @@ require('connexion.php');
   <!--*************************** Buocle auteur********************************* -->
   <!-- *****************************************************************************-->
   <div class="form-row">
-    <div class="form-group col-md-4">
+    <div class="form-group margin-formule col-md-4">
       <select id="inputState"  name="auteur" class="form-control"> 
       <?php
         $sql1=$conn->prepare("SELECT  * FROM auteur");
@@ -76,7 +115,7 @@ require('connexion.php');
   <!-- ***************************Boucle Categorie*********************************** -->
   <!-- ****************************************************************************** -->
   <div class="form-row">
-    <div class="form-group col-md-4">
+    <div class="form-group margin-formule col-md-4">
       <select id="inputState" class="form-control" name="cat">
       <?php
         $sql2=$conn->prepare("SELECT  * FROM categorie");
@@ -92,25 +131,31 @@ require('connexion.php');
     </select>
     </div>
   </div>
-  <div class="form-group col-md-6">
+  <div class="form-group margin-formule col-md-6">
     <input type="date" class="form-control" id="inputEmail4" name="date1"  value="<?php echo $tab["date1"]?>">
   </div>
   <div class="form-group">
-    <div class="form-check">
-      <img src="uploads/<?php echo $tab['img']; ?>" alt="img">
+    <div class="form-check margin-formule ">
+      <img src="uploads/<?php echo $tab['img']; ?>" alt="img" width="250px">
       <input type="file" name="fileToUpload" accept="image/*" >
       <!-- <input name="image5" type="file" accept="image/*" /> -->
       <input type="text" class="form-control d-none" id="inputEmail4" name="id_article" value="<?php echo $tab["id_article"]?>">
     </div>
   </div>
-  <button type="submit" class="btn btn-primary" name="modifier">modifier</button>
+  <button type="submit" class="btn btn-primary margin-formule btn-lg btn-block w-50" name="modifier" >modifier</button>
   </section>
 </form>
 
 </main>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </html>
 
