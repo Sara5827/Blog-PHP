@@ -52,20 +52,9 @@
 						</ul>
 					</nav>
 <body class="container">
-<br>
-<br>
-<br>
+
 <div class="card">
-            <div class="card-header bg-light">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3 class="mb-0" id="followers">Auteur</h3>
-                </div>
-                <div>
-                <p class="nav-item"><a href="formuleauteur.php"  class="nav-link">Ajouter un Auteur</a></p>
-                </div>
-              </div>
-            </div>
+            
             <div class="card-body bg-light p-0">
             
               <div class="row no-gutters text-center fs--1">
@@ -74,9 +63,7 @@
                   <div class="bg-white p-3 h-100"><a href="../pages/profile.html"><img class="img-thumbnail img-fluid rounded-circle mb-3 shadow-sm" src="https://image.freepik.com/vecteurs-libre/homme-affaires-caractere-avatar-isole_24877-60111.jpg" width="626" height="626" alt="Homme d'affaires caractère avatar isolé Vecteur gratuit" alt="" width="100"></a>
                   <p class="fs--2 mb-1 font-weight-bold "><?php echo $data['nom_complet'];?></p> 
                   <h6 class="mb-1"><a href="../pages/profile.html"><?php echo $data['email'];?></a></h6>
-                  <td><a href="AffichageModAuteur.php?modifier=<?php echo $data['id_auteur'];?>" name="modifier" class="edit_btn"><button type="button" class="btn btn-info">
-edit</button></a>
-                <a href="supprimerauteur.php?supprimer=<?php echo $data['id_auteur'];?>" ><button type="button" class="btn btn-danger">Delete</button></a> </td>
+                 
                 </div>
                 </div>
                 <?php endforeach; ?>   
@@ -84,7 +71,8 @@ edit</button></a>
             </div>
             
           </div>
-          <p class="mb-0 text-600">Thank you for creating ... <span class="d-none d-sm-inline-block">| </span><br class="d-sm-none"> 2020 © <a href="https://themewagon.com">HomeS</a></p>
+                      <!-- Footer -->
+    <?php  include 'footer.php'?>
          
 </body>
 <!-- Scripts -->

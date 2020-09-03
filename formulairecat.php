@@ -77,6 +77,7 @@
 </form>
 </main>
 </body>
+<?php  include 'footer.php'?>
 <script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>

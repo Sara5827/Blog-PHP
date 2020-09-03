@@ -1,0 +1,9 @@
+* {
+    margin: 0 auto;
+    width: 80%;
+}
+
+div {
+    border: 1px solid black;
+    padding: 2%;
+}

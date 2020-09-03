@@ -1,0 +1,64 @@
+.div_container {
+    border: 0 solid transparent;
+    width: 70%;
+    height: auto;
+    margin: 10px auto auto auto;
+    height: 100px;
+    background-color: rgb(59, 57, 57);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div__arrowHead {
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 50px solid rgb(211, 195, 195);
+    border-bottom: 50px solid transparent;
+    float: right;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__arrowBody {
+    width: 70%;
+    background-color: rgb(211, 195, 195);
+    height: 100px;
+}
+
+.input__textZone {
+    background-color: transparent;
+    width: 100%;
+    height: 96%;
+    border: transparent;
+    font-size: 2em;
+    text-align: center;
+}
+
+.fa {
+    font-size: 50px;
+    margin-left: 60px;
+    color: rgb(211, 195, 195);
+}
+
+#div_container-test {
+    background-color: transparent;
+}
+
+#div__arrowbody--test {
+    width: 100%;
+}
+
+button {
+    color: white;
+    font-size: large;
+    background-color: rgb(54, 54, 240);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}

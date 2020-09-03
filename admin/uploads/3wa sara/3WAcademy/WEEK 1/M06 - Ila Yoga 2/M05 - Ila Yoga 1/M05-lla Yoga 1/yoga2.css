@@ -1,0 +1,134 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        main {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        header {
+            background-image: url("img/fond.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 750px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        nav {
+            text-align: center;
+            font-size: 1.5em;
+            background-color: rgba(236, 234, 234, 0.329);
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            padding: 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: "Kaushan Script";
+        }
+        
+        .OFFRE {
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+            font-family: "Playfair Display";
+            background-color: rgba(216, 214, 214, 0.329);
+        }
+        
+        .Bienvenue {
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            font-family: "Kaushan Script";
+            text-shadow: 3px 3px 3px rgb(94, 92, 92);
+        }
+        /* la partie 1: tableau*/
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        .Janvier {
+            font-size: 1em;
+            font-family: Playfair Display;
+            text-align: left;
+        }
+        
+        caption {
+            background-color: #C4A9DE;
+            font-family: "Kaushan Script";
+            text-align: left;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .Reserver {
+            font-size: 1.5em;
+            text-align: center;
+            padding: 10px;
+        }
+        /* la partie2: formulaire*/
+        
+        fieldset {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        select {
+            margin-left: 0;
+            width: 100%;
+        }
+        
+        .pour_valider {
+            font-size: 1.3em;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        button {
+            margin-left: 50%;
+            background-color: #8D5FC3;
+            text-decoration-line: blink;
+            padding: 8px;
+            margin-top: 19px
+        }
+        
+        .texte {
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 1px solid black;
+        }
+        /**/
+        
+        #div1 {
+            text-align: center;
+        }
+        
+        h6 {
+            text-align: center;
+        }
+        
+        footer {
+            background-image: url("img/background_section.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }

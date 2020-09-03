@@ -1,0 +1,37 @@
+body {
+    margin: 0 auto;
+    width: 50%;
+    background-color: wheat;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.info__img--lol {
+    width: 250px;
+    height: 350px;
+}
+
+.icon {
+    font-size: 140px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info__Titre {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.com {
+    background-color: bisque;
+}
